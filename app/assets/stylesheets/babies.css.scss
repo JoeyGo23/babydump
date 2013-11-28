@@ -26,6 +26,13 @@ h2#baby-name {
   text-align: center;
   background-color: #FFF;
   border: 1px color #EEE;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.baby-container image {
+  height: 100%;
 }
 
 .add-photo {
@@ -35,12 +42,5 @@ h2#baby-name {
   text-align: center;
   background-color: #FFF;
   border: 1px color #EEE;
-  height: 400px;
-  width: 400px;
 }
 
-.baby-profile-img {
-  width: 400px;
-  height: 400px;
-  background-size: cover;
-}
