@@ -1,0 +1,8 @@
+<%= link_to 'Add a photo', new_baby_photo_path(@baby) %>
+
+<% @baby.photos.each do |photo| %>
+
+  <%= photo %>
+  <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
+
+<% end %>
