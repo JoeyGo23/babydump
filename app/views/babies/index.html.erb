@@ -2,8 +2,8 @@
   <% @babies.each do |baby| %>
 
     <%= link_to baby_path(baby) do %>
-      <div class='baby-container'>
-          <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
+      <div class='baby-container th'>
+        <%= image_tag "#{baby.first_name.downcase}-profile.jpg" %>
         <h2 id='baby-name'><%= baby.full_name %></h2>
       </div>
     <% end %>
