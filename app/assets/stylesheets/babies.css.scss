@@ -12,9 +12,19 @@ h1#title {
   font-size: 5em;
 }
 
+.babies-container {
+  margin: 0 auto;
+}
+
+.baby-container {
+  display: inline-block;
+  margin: 10px 30px 10px 30px;
+  text-align: center;
+}
+
 .baby-profile-img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-size: cover;
 }
 

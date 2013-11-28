@@ -1,6 +1,11 @@
-<% @babies.each do |baby| %>
-  <div class="small-2 large-4">
-    <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
-    <h2><%= baby.full_name %></h2>
+<!-- div class='babies-container' -->
+<div class='small-8 large-centered columns'>
+
+  <% @babies.each do |baby| %>
+    <div class='baby-container'>
+      <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
+      <h2><%= baby.full_name %></h2>
   </div>
-<% end %>
+  <% end %>
+
+</div>
