@@ -1,8 +1,14 @@
-<%= link_to 'Add a photo', new_baby_photo_path(@baby) %>
 
-<% @baby.photos.each do |photo| %>
+<div class='small-8 large-centered columns'>
+  <% @baby.photos.each do |photo| %>
+    <div class='baby-container'>
+      <div class="baby-profile-img" style='background-image: url(<%= "#{photo.photo.url}" %>)'></div>
+    </div>
+  <% end %>
+  <div class='add-photo'>
+    <%= link_to new_baby_photo_path(@baby) do %>
+      <h3>Add a photo</h3>
+    <% end %>
+  </div>
+</div>
 
-  <%= photo %>
-  <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
-
-<% end %>

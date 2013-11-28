@@ -15,6 +15,10 @@ h1#title {
   color: #FFF;
 }
 
+h2#baby-name {
+  padding-top: 19px;
+}
+
 .baby-container {
   display: inline-block;
   margin: 0 20px;
@@ -22,6 +26,17 @@ h1#title {
   text-align: center;
   background-color: #FFF;
   border: 1px color #EEE;
+}
+
+.add-photo {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 18px 12px;
+  text-align: center;
+  background-color: #FFF;
+  border: 1px color #EEE;
+  height: 400px;
+  width: 400px;
 }
 
 .baby-profile-img {

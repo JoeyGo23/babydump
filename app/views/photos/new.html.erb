@@ -1,0 +1,5 @@
+<%= form_for [@baby, @photo], html: { multipart: true} do |f|  %>
+  <%= f.label :photo, "Upload a photo of Baby #{@baby.first_name}" %>
+  <%= f.file_field :photo %>
+  <%= f.submit 'Add photo' %>
+<% end %>
