@@ -1,8 +1,28 @@
-h1 { font-size: 60px; }
+.header {
+  width: auto;
+  border: none;
+  margin: 0 0 40px;
+  padding: 40px 0;
+  background-color: #9BE3FA;
+  height: 200px;
+}
 
+h1#title {
+  text-align: center;
+  font-size: 5em;
+}
 
 .baby-profile-img {
   width: 300px;
   height: 300px;
   background-size: cover;
+}
+
+.footer {
+  width: auto;
+  border: none;
+  margin: 0 0 40px;
+  padding: 40px 0;
+  background-color: #9BE3FA;
+  height: 200px;
 }
