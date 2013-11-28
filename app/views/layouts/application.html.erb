@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>Babydump</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+  <head>
+    <title>BabyDump</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" %>
+    <%= javascript_include_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js" %>
+    <%= csrf_meta_tags %>
+  </head>
 
-</body>
+  <body>
+    <%= yield %>
+  </body>
+
 </html>
