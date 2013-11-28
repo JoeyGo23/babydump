@@ -1,3 +1,4 @@
 <% @babies.each do |baby| %>
   <h2><%= baby.full_name %></h2>
+  <div class="baby-profile-img" style='background-image: url(<%= "assets/#{baby.first_name.downcase}-profile.jpg" %>)'></div>
 <% end %>
