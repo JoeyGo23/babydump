@@ -1,28 +1,20 @@
 class BabiesController < ApplicationController
   before_action :set_baby, only: [:show, :edit, :update, :destroy]
 
-  # GET /babies
-  # GET /babies.json
   def index
     @babies = Baby.all
   end
 
-  # GET /babies/1
-  # GET /babies/1.json
   def show
   end
 
-  # GET /babies/new
   def new
     @baby = Baby.new
   end
 
-  # GET /babies/1/edit
   def edit
   end
 
-  # POST /babies
-  # POST /babies.json
   def create
     @baby = Baby.new(baby_params)
 
@@ -37,8 +29,6 @@ class BabiesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /babies/1
-  # PATCH/PUT /babies/1.json
   def update
     respond_to do |format|
       if @baby.update(baby_params)
@@ -51,8 +41,6 @@ class BabiesController < ApplicationController
     end
   end
 
-  # DELETE /babies/1
-  # DELETE /babies/1.json
   def destroy
     @baby.destroy
     respond_to do |format|
